@@ -1,0 +1,107 @@
+<!--======  HERO PART START ======-->
+<section class="hero-area hero-carousel-active" id="home">
+    <div class="single-hero-area hero-bg-1 bg_cover" data-scroll-area="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero-area-content">
+                        <p class="hero-para">Dynamic world dynamic contents  <br>
+                            Redefine the technology of LLM and VLM</p>
+                        <h1 class="hero-heading">
+                            Stochastic <br>
+                            Neural <br> 
+                            Dynamics
+                        </h1>
+                        <div class="hero-area-menu">
+                            <ul>
+                                <!-- <li><a href="#">Design</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Developemt</a></li> -->
+                            </ul>
+                        </div>
+                        <a href="#" class="btn hero-btn">Get Started <i class="fa fa-arrow-right"></i></a>
+                        <!-- <a href="https://www.youtube.com/watch?v=iogabydg2y0" class="video-btn video-popup"><i class="fa fa-play"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scrolli">
+            <span><i class="fa fa-arrow-down"></i></span>
+        </div>
+    </div>
+    <div class="single-hero-area hero-bg-2 bg_cover" data-scroll-area="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero-area-content">
+                        <p class="hero-para">Redefine the narrative intelligence of next-gen AI  <br>
+                            The story of you</p>
+                        <h1 class="hero-heading">
+                            Reimagine Storytelling
+                        </h1>
+                        <div class="hero-area-menu">
+                            <ul>
+                                <!-- <li><a href="#">Design</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Developemt</a></li> -->
+                            </ul>
+                        </div>
+                        <a href="#" class="btn hero-btn">get Started <i class="fa fa-arrow-right"></i></a>
+                        <!-- <a href="#" class="video-btn video-popup"><i class="fa fa-play"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scrolli">
+            <span><i class="fa fa-arrow-down"></i></span>
+        </div>
+    </div>
+    <div class="single-hero-area hero-bg-3 bg_cover" data-scroll-area="true">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero-area-content">
+                        <p class="hero-para">Materialize vibrant characters, bold plots and mysteries  <br>
+                            In text, image and video</p>
+                        <h1 class="hero-heading">
+                            Immersive Creation
+                        </h1>
+                        <div class="hero-area-menu">
+                            <ul>
+                                <!-- <li><a href="#">Design</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Developemt</a></li> -->
+                            </ul>
+                        </div>
+                        <a href="#" class="btn hero-btn">get Started <i class="fa fa-arrow-right"></i></a>
+                        <!-- <a href="#" class="video-btn video-popup"><i class="fa fa-play"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scrolli">
+            <span><i class="fa fa-arrow-down"></i></span>
+        </div>
+    </div>
+</section>
+<!--======  HERO PART END ======-->
+
+<!-- jQuery 라이브러리 로드 (이미 로드되어 있다면 생략 가능) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    // 모든 hero-area-content 요소를 숨기고 첫 번째 요소만 보이도록 설정
+    var $contents = $('.hero-area-content');
+    $contents.hide().first().show();
+    var currentIndex = 0;
+    
+    // 3초마다 다음 요소로 전환 (fade 효과 포함)
+    setInterval(function(){
+        $contents.eq(currentIndex).fadeOut(500, function(){
+            currentIndex = (currentIndex + 1) % $contents.length;
+            $contents.eq(currentIndex).fadeIn(500);
+        });
+    }, 3000);
+});
+</script>
