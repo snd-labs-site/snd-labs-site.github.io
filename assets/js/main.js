@@ -69,7 +69,7 @@ $('.main-menu nav ul').onePageNav();
     $('.hero-carousel-active').slick({
         dots: true,
         infinite: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
         arrows: false,
         prevArrow: '<span class="prev"><i class="fal fa-long-arrow-alt-left"></i></span>',
