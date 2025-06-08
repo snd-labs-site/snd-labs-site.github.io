@@ -175,7 +175,7 @@
         padding: 25px 40px;
     }
     .hero-area-content {
-        padding-top: 40px;
+        padding-top: 100px;
         padding-bottom: 40px;
     }
     .hero-para {
@@ -335,6 +335,7 @@
     }
     .slicknav_menu{
         display: block;
+        z-index: 9999;
       }
       
 .mobile-menu-wrap {
@@ -349,6 +350,7 @@
   }
   .mobile-menu-wrap .slicknav_menu {
 	background: transparent;
+	z-index: 9999;
 }
 .slicknav_menu .slicknav_menutxt {
 	display: none;
@@ -453,11 +455,12 @@
         left: 5px;
     }
     .hero-area-content {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 80px;
+        padding-bottom: 40px;
     }
     .single-hero-area {
         min-height: 100vh;
+        padding-top: 60px;
     }
     .single-testimonial-content p {
         font-size: 18px;

@@ -9,16 +9,24 @@
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="{{relative_url}}/assets/css/bootstrap.min.css">
     <!--====== Fontawesome pro css ======-->
-    <link rel="stylesheet" href="{{relative_url}}/assets/css/all.css">
+    <link rel="preload" href="{{relative_url}}/assets/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{relative_url}}/assets/css/all.css"></noscript>
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="{{relative_url}}/assets/css/magnific-popup.css">
+    <link rel="preload" href="{{relative_url}}/assets/css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{relative_url}}/assets/css/magnific-popup.css"></noscript>
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="{{relative_url}}/assets/css/slick.css">
+    <link rel="preload" href="{{relative_url}}/assets/css/slick.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{relative_url}}/assets/css/slick.css"></noscript>
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="{{relative_url}}/assets/css/slick-menu.css">
+    <link rel="preload" href="{{relative_url}}/assets/css/slick-menu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="{{relative_url}}/assets/css/slick-menu.css"></noscript>
     <!--====== Default css ======-->
     <link rel="stylesheet" href="{{relative_url}}/assets/css/default.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.png">
+    <!-- Preload critical hero images -->
+    <link rel="preload" as="image" href="{{relative_url}}/assets/images/hero/1.jpg">
+    <link rel="preload" as="image" href="{{relative_url}}/assets/images/hero/2.jpg">
+    <link rel="preload" as="image" href="{{relative_url}}/assets/images/hero/3.jpg">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="{{relative_url}}/assets/css/style.css">
     <!--====== Style css ======-->
