@@ -592,6 +592,9 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
   }
   .single-hero-area:before {
     position: absolute;
@@ -605,8 +608,8 @@ header {
     opacity: .89;
   }
   .hero-area-content {
-	padding-top: 250px;
-	padding-bottom: 250px;
+	padding-top: 80px;
+	padding-bottom: 80px;
 }
 
 .hero-para {
@@ -618,7 +621,7 @@ header {
     position: relative;
     z-index: 1;
     padding-left: 35px;
-    white-space: nowrap;
+    white-space: normal;
   }
   .hero-para:before {
     position: absolute;
