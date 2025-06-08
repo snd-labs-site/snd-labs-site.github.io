@@ -87,13 +87,28 @@
     <script defer src="{{relative_url}}/assets/js/simple-jekyll-search.min.js"></script>
     <!--====== Main js ======-->
     <script defer src="{{relative_url}}/assets/js/main.js"></script>
-    <!--====== Lazy load hero images ======-->
+    <!--====== Smart hero image loading ======-->
     <script>
     window.addEventListener('load', function() {
+        // Load second image after 2 seconds (before first transition at 5s)
         setTimeout(function() {
             document.querySelector('.hero-bg-2')?.classList.add('loaded');
+            console.log('Hero image 2 loaded');
+        }, 2000);
+        
+        // Load third image after 7 seconds (before second transition at 10s)
+        setTimeout(function() {
             document.querySelector('.hero-bg-3')?.classList.add('loaded');
-        }, 1000);
+            console.log('Hero image 3 loaded');
+        }, 7000);
+        
+        // Preload all images on user interaction (hover/click on dots)
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.slick-dots')) {
+                document.querySelector('.hero-bg-2')?.classList.add('loaded');
+                document.querySelector('.hero-bg-3')?.classList.add('loaded');
+            }
+        });
     });
     </script>
 </body>

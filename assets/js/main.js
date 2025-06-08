@@ -70,7 +70,7 @@ $('.main-menu nav ul').onePageNav();
         dots: true,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 5000,
         arrows: false,
         prevArrow: '<span class="prev"><i class="fal fa-long-arrow-alt-left"></i></span>',
         nextArrow: '<span class="next"><i class="fal fa-long-arrow-alt-right"></i></span>',
