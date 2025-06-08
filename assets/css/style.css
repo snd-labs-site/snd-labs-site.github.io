@@ -578,12 +578,18 @@ header {
     background-color: #ddd;
 }
 .hero-bg-2{
-    background: url(../images/hero/2.jpg);
     background-color: #ddd;
 }
 .hero-bg-3{
-  background: url(../images/hero/3.jpg);
-  background-color: #ddd;
+    background-color: #ddd;
+}
+
+/* Lazy load other hero images after initial load */
+.hero-bg-2.loaded{
+    background: url(../images/hero/2.jpg);
+}
+.hero-bg-3.loaded{
+    background: url(../images/hero/3.jpg);
 }
 
 .single-hero-area {
@@ -608,8 +614,9 @@ header {
     opacity: .89;
   }
   .hero-area-content {
-	padding-top: 120px;
-	padding-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 15vh;
 }
 
 .hero-para {

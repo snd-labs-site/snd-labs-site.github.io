@@ -11,8 +11,9 @@
         font-size: 12px;
     }
     .hero-area-content {
-        padding-top: 100px;
-        padding-bottom: 60px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin-top: 12vh;
     }
     .top-header-social-links ul li a {
         font-size: 12px;
@@ -175,8 +176,9 @@
         padding: 25px 40px;
     }
     .hero-area-content {
-        padding-top: 120px;
+        padding-top: 20px;
         padding-bottom: 40px;
+        margin-top: 10vh;
     }
     .hero-para {
         font-size: 20px;
@@ -455,8 +457,9 @@
         left: 5px;
     }
     .hero-area-content {
-        padding-top: 80px;
+        padding-top: 20px;
         padding-bottom: 40px;
+        margin-top: 8vh;
     }
     .single-hero-area {
         min-height: 100vh;
